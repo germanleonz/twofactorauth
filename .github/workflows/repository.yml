@@ -7,7 +7,7 @@ jobs:
     container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Bundle install
@@ -38,7 +38,7 @@ jobs:
     container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Bundle install
         run: |
           bundle config set without test
